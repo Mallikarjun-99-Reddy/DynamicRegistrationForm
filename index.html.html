@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+	<style>
+		body
+		{
+			font-family: Arial, sans-serif;
+			text-align:center;
+		}
+		
+		#brandlogo h1
+		{
+			font-size : 40px;
+			font-weight : bold;
+			color : black;
+			border : 4px solid green;
+			display : inline-block;
+		}
+		
+		hr
+		{
+			border : 1px solid black;
+			width : 50%;
+			margin : 20px auto;
+		}
+		
+		form
+		{
+			background-color : white;
+			margin: 20px auto;
+			padding : 20px;
+			width : 50%;
+			border-radius : 10px;
+			box-shadow : 0px, 0px, 10px, gray;
+		}
+		
+		table
+		{
+			margin:auto;
+			width : 100%;
+		}
+		
+		h1
+		{
+			font-size:28px;
+			margin-bottom : 20px;
+		}
+		
+		h2 
+		{
+	        font-size: 20px;
+	        margin-bottom: 20px;
+	        color: #333;
+   		}
+		
+		td
+		{
+			font-weight : bold;
+			padding : 10px;
+			font-size : 18px;
+			text-align : left;
+		}
+		
+		input, select 
+		{
+			 width: 100%;
+	        padding: 8px;
+	        font-size: 16px;
+	        margin-top: 5px;
+	        border-radius: 5px;
+	        border: 1px solid #ccc;
+		}
+		
+		.register-btn
+		{
+			background-color: blue;
+	        color: white;
+	        padding: 12px 20px;
+	        font-size: 18px;
+	        border: none;
+	        cursor: pointer;
+	        width: 100%;
+	        border-radius: 5px;
+	        margin-top: 15px;
+		}
+		
+		.register-btn:hover
+		{
+			background-color : darkblue;
+		}
+		
+		
+		
+		
+	</style>
+</head>
+<body bgcolor='cyan'>
+
+	<div id="brandlogo">
+		<h1><b>TIGOR FIT</b></h1>
+	</div>
+	<hr>
+	<div id="bodywlogo">
+	<h1>Welcome to Tigor Fit Gym </h1>
+	<form method="post" action="TigorFitApp">
+	
+		<table>
+			<h2>Fill the form to register.</h2>
+			<tr> 
+				<td> Name </td>
+				<td> <input type="text" name="uname"> </td>
+			</tr>
+			
+			<tr>
+				<td> UserName </td>
+				<td> <input type="text" name="userName"> </td>
+			</tr>
+			
+			<tr> 
+				<td> Email ID </td>
+				<td> <input type="email" name="email"> </td>
+			</tr>
+			
+			<tr> 	
+				<td> Password </td>
+				<td> <input type="password" name="password" > </td>
+			</tr>
+			
+			<tr>
+				<td> select branch </td>
+				<td> <select for="branches" name="branch">
+						<option> Madhapur branch </option>
+						<option> KPHB branch </option>
+						<option> Kukkatpally </option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr> 
+				<td colspan="2"> <input type="submit" value="Register" class="register-btn"> </td>
+			</tr>
+				
+		
+		</table>
+	
+	</form>
+	</div>
+</body>
+</html>
